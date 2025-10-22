@@ -6,7 +6,7 @@
 /*   By: lomont <lomont@student.42lehavre.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 12:03:12 by lomont            #+#    #+#             */
-/*   Updated: 2025/10/22 01:58:49 by lomont           ###   ########.fr       */
+/*   Updated: 2025/10/22 02:04:01 by lomont           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int main(void)
     frag.attack("skag");
     frag.takeDamage(50);
     frag.beRepaired(25);
-    frag.highFivesGuy();
+    frag.highFivesGuys();
 
     std::cout << "\n--- FragTrap HP Test ---" << std::endl;
     frag.takeDamage(80);
@@ -53,7 +53,7 @@ int main(void)
 
     std::cout << "\n--- FragTrap Copy ---" << std::endl;
     FragTrap fragCopy(frag);
-    fragCopy.highFivesGuy();
+    fragCopy.highFivesGuys();
 
     std::cout << "\n\n=== TESTING ASSIGNMENT OPERATORS ===" << std::endl;
     std::cout << "\n--- ClapTrap Assignment ---" << std::endl;
