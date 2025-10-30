@@ -6,20 +6,20 @@
 /*   By: lomont <lomont@student.42lehavre.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 12:03:09 by lomont            #+#    #+#             */
-/*   Updated: 2025/10/22 02:08:57 by lomont           ###   ########.fr       */
+/*   Updated: 2025/10/29 23:40:20 by lomont           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap( std::string setName ) : Name( setName ), HitPoints( 10 ), EnergyPoints( 10 ), AttackDamage( 0 ) {
+ClapTrap::ClapTrap() : Name("defaultClapTrap"), HitPoints( 10 ), EnergyPoints( 10 ), AttackDamage( 0 ) {
 	std::cout << "ClapTrap Default constructor called" << std::endl;
-	return;
+	return ;
 }
 
-ClapTrap::ClapTrap( std::string setName, int setHitPoints, int setEnergyPoints, int setAttackDamage ) : Name(setName), HitPoints(setHitPoints), EnergyPoints(setEnergyPoints), AttackDamage(setAttackDamage) {
-	std::cout << "ClapTrap constructor called" << std::endl;
-	return ;
+ClapTrap::ClapTrap( std::string setName ) : Name( setName ), HitPoints( 10 ), EnergyPoints( 10 ), AttackDamage( 0 ) {
+	std::cout << "Named ClapTrap constructor called" << std::endl;
+	return;
 }
 
 ClapTrap::ClapTrap( ClapTrap const & src ) : Name(src.Name), HitPoints(src.HitPoints), EnergyPoints(src.EnergyPoints), AttackDamage(src.AttackDamage) {
