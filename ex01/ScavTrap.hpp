@@ -6,21 +6,22 @@
 /*   By: lomont <lomont@student.42lehavre.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 14:59:37 by lomont            #+#    #+#             */
-/*   Updated: 2025/10/21 02:38:34 by lomont           ###   ########.fr       */
+/*   Updated: 2025/10/29 23:59:24 by lomont           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#include "ClapTrap.hpp"
-#include "iostream"
-
 #ifndef SCAVTRAP_HPP
 #define SCAVTRAP_HPP
+
+#include "ClapTrap.hpp"
+#include "iostream"
 
 class ScavTrap : public ClapTrap
 {
 	public:
+		ScavTrap( void );
 		ScavTrap( std::string setName );
 		ScavTrap( ScavTrap const & src );
 		ScavTrap& operator=( ScavTrap const & other );
