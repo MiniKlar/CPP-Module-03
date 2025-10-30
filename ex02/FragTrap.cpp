@@ -6,14 +6,25 @@
 /*   By: lomont <lomont@student.42lehavre.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 14:59:39 by lomont            #+#    #+#             */
-/*   Updated: 2025/10/22 01:59:56 by lomont           ###   ########.fr       */
+/*   Updated: 2025/10/30 00:05:30 by lomont           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
 
-FragTrap::FragTrap( std::string setName ) : ClapTrap(setName, 100, 100, 30) {
-	std::cout << "FragTrap constructor called!" << std::endl;
+FragTrap::FragTrap( void ) : ClapTrap("defaultClapTrap") {
+	std::cout << "Default FragTrap constructor called!" << std::endl;
+	this->HitPoints = 100;
+	this->EnergyPoints = 100;
+	this->AttackDamage = 30;
+	return ;
+}
+
+FragTrap::FragTrap( std::string setName ) : ClapTrap(setName) {
+	std::cout << "Named FragTrap constructor called!" << std::endl;
+	this->HitPoints = 100;
+	this->EnergyPoints = 100;
+	this->AttackDamage = 30;
 	return ;
 }
 

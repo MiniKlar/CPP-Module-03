@@ -6,21 +6,22 @@
 /*   By: lomont <lomont@student.42lehavre.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 14:59:37 by lomont            #+#    #+#             */
-/*   Updated: 2025/10/22 02:00:22 by lomont           ###   ########.fr       */
+/*   Updated: 2025/10/30 00:03:04 by lomont           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
-#include "ClapTrap.hpp"
-#include "iostream"
-
 #ifndef FRAGTRAP_HPP
 #define FRAGTRAP_HPP
+
+#include "ClapTrap.hpp"
+#include "iostream"
 
 class FragTrap : public ClapTrap
 {
 	public:
+		FragTrap( void );
 		FragTrap( std::string setName );
 		FragTrap( FragTrap const & src );
 		FragTrap& operator=( FragTrap const & other );
